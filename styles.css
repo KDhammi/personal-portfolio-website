@@ -156,3 +156,39 @@ a {
 span:hover {
     color: yellow;
 }
+
+/* Contact */
+.contact {
+    height: auto;
+    background-image: url(./images/contact-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact img {
+    width: 110px;
+    transition: transform 1s;
+}
+
+.contact img:hover {
+    transform: rotate(360deg) scale(1.5);
+}
+
+#email span:hover{
+    color: maroon;
+}
+
+#github span:hover {
+    color: purple;
+}
+
+#linkedin span {
+    color: white;
+}
+
+#linkedin span:hover {
+    color: yellow;
+}
