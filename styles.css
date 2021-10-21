@@ -1,16 +1,21 @@
+/* Global */
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 1.10rem;
     margin: 0;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
+
+/* Navigation */
 nav {
     width: 100%;
     background-color: rgba(10, 10, 10, 0.9);
     position: fixed;
     top: 0;
     display: flex;
+    z-index: 10;
 }
 
 nav a {
@@ -37,10 +42,37 @@ nav a {
     background-color: black;
     font-weight: bold;
     color: aqua;
+    transition: color 2s, background-color 2s, transform 2s;
 }
 
 .links a:hover {
     color: black;
     background-color: white;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    transform: scale(2);
+}
+
+/* Header */
+header {
+    padding-top: 64px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)), url(./images/header-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+.text-over {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    padding-top: 10%;
+    z-index: 2;
+}
+
+.text-over h1, .text-over h3, .text-over button {
+    width: 100%;
 }
