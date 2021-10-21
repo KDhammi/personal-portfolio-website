@@ -1,7 +1,7 @@
 /* Global */
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: 1.10rem;
+    font-size: 1.50rem;
     margin: 0;
     font-weight: 400;
     scroll-behavior: smooth;
@@ -132,5 +132,27 @@ header {
 
 .project img {
     width: 500px;
+    transition: transform 0.5s;
 }
 
+.project img:hover {
+    transform: scale(1.1);
+}
+
+.project:hover {
+    background-color: rgba(5, 5, 5, 0.25);
+    color: aliceblue;
+    z-index: 2;
+}
+
+span {
+    transition: all 1s;
+}
+
+a {
+    text-decoration: none;
+}
+
+span:hover {
+    color: yellow;
+}
