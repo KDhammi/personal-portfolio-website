@@ -1,0 +1,114 @@
+/* Global */
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1.10rem;
+    margin: 0;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+main {
+    background-image: url("./images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    width: 100%;
+    padding-top: 64px;
+    height: 800px;
+}
+
+article {
+    margin-left: 10px;
+}
+
+
+/* Navigation */
+nav {
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.9);
+    position: fixed;
+    top: 0;
+    display: flex;
+    z-index: 10;
+}
+
+nav a {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.links {
+    text-align: right;
+    width: 100%;
+}
+
+.links li {
+    display: inline;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: black;
+    font-weight: bold;
+    color: aqua;
+    transition: color 1s, background-color 1s, transform 1s, padding 1s;
+}
+
+.links a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+/* Header */
+header {
+    padding-top: 64px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)), url(./images/header-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+
+.text-over {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    padding-top: 10%;
+    z-index: 2;
+}
+
+.text-over h1, .text-over h3 {
+    width: 100%;
+}
+
+/* About */
+.logo-container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: teal;
+    margin-left: 0;
+}
+
+.logo img {
+    height: 64px;
+    width: 64px;
+    transition: padding 1s, transform 1s;
+}
+
+.logo img:hover {
+    padding: 2em;
+    transform: scale(2);
+}
