@@ -42,14 +42,13 @@ nav a {
     background-color: black;
     font-weight: bold;
     color: aqua;
-    transition: color 2s, background-color 2s, transform 2s;
+    transition: color 1s, background-color 1s, transform 1s, padding 1s;
 }
 
 .links a:hover {
     color: black;
     background-color: white;
-    /* padding: 10px 20px; */
-    transform: scale(2);
+    padding: 10px 20px;
 }
 
 /* Header */
@@ -73,6 +72,6 @@ header {
     z-index: 2;
 }
 
-.text-over h1, .text-over h3, .text-over button {
+.text-over h1, .text-over h3 {
     width: 100%;
 }
