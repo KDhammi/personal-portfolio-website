@@ -299,3 +299,25 @@ span:hover {
         color: blueviolet;
     }
 }
+
+/* Footer */
+footer {
+    padding: 1px;
+    font-size: 1rem;
+    background-color: aqua;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    border: 1px solid black;
+    padding: 2px 4px;
+    border-radius: 15px;
+    background-color: black;
+    transition: all 0.5s;
+}
+
+footer a:hover {
+    background-color: white;
+    color: black;
+}
