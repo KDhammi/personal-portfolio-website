@@ -7,7 +7,7 @@ body {
 
 nav {
     width: 100%;
-    background-color: black;
+    background-color: rgba(10, 10, 10, 0.9);
     position: fixed;
     top: 0;
     display: flex;
@@ -15,7 +15,7 @@ nav {
 
 nav a {
     text-align: left;
-    background-color: lightgray;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 .links {
@@ -39,3 +39,8 @@ nav a {
     color: aqua;
 }
 
+.links a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+}
