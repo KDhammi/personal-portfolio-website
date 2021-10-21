@@ -24,6 +24,22 @@ article {
     margin-left: 10px;
 }
 
+@media only screen and (max-width: 1048px) {
+    body {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    section{
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 1rem;
+    }
+}
 
 /* Navigation */
 nav {
@@ -68,6 +84,26 @@ nav a {
     padding: 10px 20px;
 }
 
+@media only screen and (max-width: 1048px) {
+    #git-logo {
+        display: none;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    nav {
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .links a {
+        padding: 5px;
+    }
+}
+
 /* Header */
 header {
     padding-top: 64px;
@@ -93,6 +129,18 @@ header {
     width: 100%;
 }
 
+@media only screen and (max-width: 1048px) {
+    header {
+        max-height: 500px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        max-height: 300px;
+    }
+}
+
 /* About */
 .logo-container {
     width: 100%;
@@ -111,6 +159,20 @@ header {
 .logo img:hover {
     padding: 2em;
     transform: scale(2);
+}
+
+@media only screen and (max-width: 1048px) {
+    .logo img:hover {
+        padding: 1.25em;
+        transform: scale(1.25);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo img:hover {
+        padding: 0;
+        transform: scale(1);
+    }
 }
 
 /* Projects */
@@ -157,6 +219,22 @@ span:hover {
     color: yellow;
 }
 
+@media only screen and (max-width: 1048px) {
+    .project img:hover {
+        transform: scale(1.05)
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .project img {
+        width: 75%;
+    }
+    
+    .project img:hover {
+        transform: scale(1);
+    }
+}
+
 /* Contact */
 .contact {
     height: auto;
@@ -191,4 +269,33 @@ span:hover {
 
 #linkedin span:hover {
     color: yellow;
+}
+
+@media only screen and (max-width: 1048px) {
+    .contact {
+        height: 1000px;
+        font-size: 1.2rem;
+    }
+    
+    .contact img:hover {
+        transform: scale(1.25);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        font-size: 1rem;
+    }
+
+    .contact img {
+        display: none;
+    }
+
+    #linkedin span {
+        color: blue;
+    }
+
+    #linkedin span:hover {
+        color: blueviolet;
+    }
 }
