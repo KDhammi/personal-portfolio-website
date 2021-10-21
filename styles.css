@@ -7,6 +7,23 @@ body {
     scroll-behavior: smooth;
 }
 
+main {
+    background-image: url("./images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    width: 100%;
+    padding-top: 64px;
+    height: 800px;
+}
+
+article {
+    margin-left: 10px;
+}
+
 
 /* Navigation */
 nav {
@@ -59,7 +76,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 750px;
+    height: 1000px;
 }
 
 .text-over {
@@ -74,4 +91,24 @@ header {
 
 .text-over h1, .text-over h3 {
     width: 100%;
+}
+
+/* About */
+.logo-container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: teal;
+    margin-left: 0;
+}
+
+.logo img {
+    height: 64px;
+    width: 64px;
+    transition: padding 1s, transform 1s;
+}
+
+.logo img:hover {
+    padding: 2em;
+    transform: scale(2);
 }

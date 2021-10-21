@@ -31,10 +31,12 @@
 
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>I am a full stack developer in training, currently undertaking the Full Stack Developer Course on Codecademy as a part of this.</p>
-            <p>I am hoping to showcase the skills I have developed over time on this course with various projects.</p>
-            <h3>I have experience in</h3>
+            <article>
+                <h2>About Me</h2>
+                <p>I am a full stack developer in training, currently undertaking the Full Stack Developer Course on Codecademy as a part of this.</p>
+                <p>I am hoping to showcase the skills I have developed over time on this course with various projects.</p>
+                <h3>I have experience in:</h3>
+            </article>
             <div class="logo-container">
                 <div class="logo">
                     <img src="./images/html_64x64.png">
@@ -49,12 +51,40 @@
                     <img src="./images/Visual_Studio_Code_1.35_icon.svg.png">
                 </div>
             </div>
-            <p>Here are some of my projects.</p>
-            <button onclick="scrollFunc2()">Scroll to My Projects</button>
+            <article>
+                <p>Here are some of my projects:</p>
+                <button onclick="scrollFunc2()">Scroll to My Projects</button>
+            </article>
         </section>
 
         <section id="projects">
-
+            <article>
+                <h2>My Projects</h2>
+                <div class="project-container">
+                    <div class="project">
+                        <h3>Tea Cozy</h3>
+                        <a href="https://kdhammi.github.io/tea-cozy/"><img src="./images/tea-cozy.png"></a>
+                        <img src="./images/img-tea-cozy-redline.jpg">
+                        <p>A project to create a web page to the specifications using HTML and CSS and utilising flex. You can click on the redline to enlarge and compare to my finished site.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Excusrion</h3>
+                        <a href="https://kdhammi.github.io/excursion/"><img src="./images/excursion.png"></a>
+                        <img src="./images/excursion_redline.png">
+                        <p>A simple project to create a web page to the specifications. You can click on the mock to enlarge and compare to my finished site.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Urban Walkers</h3>
+                        <a href="https://kdhammi.github.io/responsive-club-website/"><img src="./images/urban-walkers.jpg"></a>
+                        <p>A website I made from scratch for a fake social club to practice changing the layout of a website based on screen size.</p>
+                    </div>
+                    <div class="project">
+                        <p>Simpson's Secuirty</p>
+                        <a href="https://kdhammi.github.io/flexbox-business-site/"><img src="./images/simpsons-security.png"></a>
+                        <p>A website I made from scratch for a fake company to practice using flex in CSS.</p>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
 </body>
